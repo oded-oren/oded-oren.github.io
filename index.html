@@ -3,9 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Site</title>
+  <title>Oded Oren</title>
+  <meta
+    name="description"
+    content="Oded Oren is the Founder and Executive Director of Scrutinize, focused on judicial transparency and accountability."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    :root {
+      --background: #050505;
+      --text: #ece3d4;
+      --muted: #bfb2a0;
+      --line: rgba(236, 227, 212, 0.18);
+      --link: #f5e8d1;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      min-height: 100%;
+      background: #050505;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #050505;
+      color: var(--text);
+      font-family: "Schibsted Grotesk", "Avenir Next", "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      padding: 40px 16px 56px;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    .page {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .stack {
+      max-width: 420px;
+      width: min(100%, 420px);
+      margin: 0 auto;
+    }
+
+    .portrait {
+      margin: 0;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid rgba(245, 232, 209, 0.92);
+      margin-bottom: 24px;
+    }
+
+    .portrait img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 18%;
+    }
+
+    .copy p {
+      margin: 0 0 20px;
+      font-size: clamp(1.1rem, 4.8vw, 1.28rem);
+      line-height: 1.42;
+      letter-spacing: -0.018em;
+      font-weight: 400;
+      overflow-wrap: break-word;
+    }
+
+    .copy p:last-child {
+      margin-bottom: 0;
+    }
+
+    .copy a {
+      box-shadow: inset 0 -1px 0 rgba(245, 232, 209, 0.38);
+      transition:
+        color 140ms ease,
+        box-shadow 140ms ease;
+    }
+
+    .copy a:hover,
+    .copy a:focus-visible {
+      color: #fff4df;
+      box-shadow: inset 0 -1px 0 rgba(255, 244, 223, 0.86);
+      outline: none;
+    }
+
+    @media (min-width: 641px) {
+      body {
+        padding: 76px 24px 96px;
+      }
+
+      .portrait {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 34px;
+      }
+
+      .copy p {
+        font-size: clamp(1.55rem, 1.42rem + 0.55vw, 2rem);
+        line-height: 1.34;
+        letter-spacing: -0.025em;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Coming Soon</h1>
+  <div class="page">
+    <main class="stack">
+      <figure class="portrait">
+        <img src="assets/oded-oren-portrait.jpg" alt="Portrait of Oded Oren" />
+      </figure>
+
+      <section class="copy" aria-label="Introduction">
+        <p>Hi, I'm Oded. I am the Founder and Executive Director of <a href="https://www.scrutinize.org/" target="_blank" rel="noreferrer">Scrutinize</a>, a nonprofit using data analysis, AI, and legal research to make state courts more transparent and accountable.</p>
+        <p>Visit <a href="https://www.scrutinize.org/" target="_blank" rel="noreferrer">Scrutinize</a> or find me on <a href="https://www.linkedin.com/in/oded-oren-21075533" target="_blank" rel="noreferrer">LinkedIn</a>.</p>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
